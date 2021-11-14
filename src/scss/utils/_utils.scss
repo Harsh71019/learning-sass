@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn-default {
+  @include mixins.button(
+    variables.$main1,
+    variables.$main2,
+    variables.$white,
+    4.5rem,
+    1.4rem,
+    0.2rem,
+    0,
+    2rem
+  );
+}
+
+.pr {
+  position: relative;
+}
